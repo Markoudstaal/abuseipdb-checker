@@ -1,0 +1,25 @@
+{
+	"name": "abuseipdb-checker",
+	"version": "1.0.0",
+	"description": "Service that daily checks the abuseipdb if your ip is present and sends you an email when it is.",
+	"main": "main.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "node app.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Markoudstaal/abuseipdb-checker.git"
+	},
+	"author": "Mark Koudstaal",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/Markoudstaal/abuseipdb-checker/issues"
+	},
+	"homepage": "https://github.com/Markoudstaal/abuseipdb-checker#readme",
+	"dependencies": {
+		"node-cron": "^2.0.3",
+		"nodemailer": "^6.3.0",
+		"request": "^2.88.0"
+	}
+}
