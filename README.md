@@ -17,7 +17,7 @@ git clone https://github.com/Markoudstaal/abuseipdb-checker.git
 
 Then run `npm install` in the newly created folder.
 
-Next make sure to change the config at `/conf/conig.js`
+Next make sure to change the config at `/conf/config.js`
 
 Lastly start the server with `npm start`
 
