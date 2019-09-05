@@ -3,9 +3,9 @@ Service that daily checks the abuseipdb if your ip is present and sends you an e
 
 ## Prerequisites
 
-Your going to need either an SMTP server or Pushover account to send messages. Also an abuseipdb account is needed to access their API.
+You're going to need either an SMTP server or Pushover account to send messages. Also an abuseipdb account is needed to access their API.
 
-Pushover account can be created [here](https://pushover.net/) and Abusipdb account can be created [here](https://www.abuseipdb.com/)
+Pushover account can be created [here](https://pushover.net/) and Abuseipdb account can be created [here](https://www.abuseipdb.com/)
 
 ## Installation
 
