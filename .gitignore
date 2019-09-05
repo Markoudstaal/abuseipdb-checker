@@ -62,3 +62,5 @@ typings/
 
 #Ignor vscode files
 .vscode/
+
+package-lock.json
