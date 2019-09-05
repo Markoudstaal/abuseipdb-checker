@@ -18,25 +18,40 @@ Lastly start the server with `npm start`
 ## Configuration
 
 `cronTiming`: Set the timing you want the service to check for reports. Default is every dat 20:00 if not set by user. To find out more about the syntax see: [cron syntax](http://www.nncron.ru/help/EN/working/cron-format.htm)
+
 `ipAddress`: Enter the address you want to be checked. Support for multiple ip's will be added soon.
+
 `maxAgeInDays`: The amount of days you want the service to look back into the database.
+
 `apiKey`: Enter your abuseipdb apiKey here.
 
 ### mailAgent
 
 `enabled`: Set to true to enable the mailAgent
+
 `cleanReports`: Set to true to enable sending emails when there are no reports for your ip.
+
 `toAddress`: The email address you want the email to be sent to.
+
 `fromAddress`: The email address you want the email te be sent from.
+
 `host`: The smtp hostname/ip-address.
+
 `port`: The smtp port used.
+
 `secure`: Secure or not. True for port 465, false for all other ports.
+
 `user`: Smtp username.
+
 `password`: Smtp password.
 
 ### pushover
 
 `enabled`: Set to true to enable the pushoverAgent.
+
 `cleanReports`: Set to true to eneble notifications when there are no reports for you ip.
+
 `apiKey`: The Api Key supplied by pushover.
+
 `deviceKey`: The Device key or User key supplied by pushover.
+
