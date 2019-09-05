@@ -61,3 +61,9 @@ Lastly start the server with `npm start`
 
 `deviceKey`: The Device key or User key supplied by pushover.
 
+## TODO
+
+- Add support for multiple IP addresses
+- Add support for more notification services
+- Add web interface for more insights
+
