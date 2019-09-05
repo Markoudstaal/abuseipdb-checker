@@ -55,7 +55,7 @@ Lastly start the server with `npm start`
 
 `enabled`: Set to true to enable the pushoverAgent.
 
-`cleanReports`: Set to true to eneble notifications when there are no reports for you ip.
+`cleanReports`: Set to true to enable notifications when there are no reports for you ip.
 
 `apiKey`: The Api Key supplied by pushover.
 
