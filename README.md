@@ -1,6 +1,12 @@
 # abuseipdb-checker
 Service that daily checks the abuseipdb if your ip is present and sends you an email when it is.
 
+## Prerequisites
+
+You're going to need either an SMTP server or Pushover account to send messages. Also an abuseipdb account is needed to access their API.
+
+Pushover account can be created [here](https://pushover.net/) and Abuseipdb account can be created [here](https://www.abuseipdb.com/)
+
 ## Installation
 
 To install clone the repository as follows:
@@ -11,7 +17,7 @@ git clone https://github.com/Markoudstaal/abuseipdb-checker.git
 
 Then run `npm install` in the newly created folder.
 
-Next make sure to change the config at `/conf/conig.js`
+Next make sure to change the config at `/conf/config.js`
 
 Lastly start the server with `npm start`
 
@@ -49,9 +55,15 @@ Lastly start the server with `npm start`
 
 `enabled`: Set to true to enable the pushoverAgent.
 
-`cleanReports`: Set to true to eneble notifications when there are no reports for you ip.
+`cleanReports`: Set to true to enable notifications when there are no reports for you ip.
 
 `apiKey`: The Api Key supplied by pushover.
 
 `deviceKey`: The Device key or User key supplied by pushover.
+
+## TODO
+
+- Add support for multiple IP addresses
+- Add support for more notification services
+- Add web interface for more insights
 
