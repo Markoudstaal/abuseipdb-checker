@@ -18,6 +18,7 @@
 	},
 	"homepage": "https://github.com/Markoudstaal/abuseipdb-checker#readme",
 	"dependencies": {
+		"cronstrue": "^1.83.0",
 		"node-cron": "^2.0.3",
 		"nodemailer": "^6.3.0",
 		"request": "^2.88.0"

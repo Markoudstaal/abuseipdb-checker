@@ -1,6 +1,6 @@
 const config = {
 	//Set the timing you want the service to check for reports. Default is every dat 20:00 if not set by user.
-	//Format is "* * * * *"
+	//Format is "* * * * *" and ? is not supported.
 	cronTiming: "",
 	//Ip you want to be checked
 	ipAddress: "",
