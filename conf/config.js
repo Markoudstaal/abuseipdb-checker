@@ -8,6 +8,8 @@ const config = {
 	maxAgeInDays: 90,
 	//Your abuseipdb key
 	apiKey: "",
+	//Set to true to run the checker once at startup
+	runAtStartup: true,
 	mailAgent: {
 		//Set to true to use mailserver
 		enabled: false,

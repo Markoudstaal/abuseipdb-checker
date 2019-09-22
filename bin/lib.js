@@ -15,15 +15,20 @@ module.exports.checkAbuseForIp = function () {
 	};
 
 	//Making the API request
-	request({ url: url, headers: headers, qs: parameters }, function (
+	request({
+		url: url,
+		headers: headers,
+		qs: parameters
+	}, function (
 		err,
 		response,
 		body
 	) {
-		let result = JSON.parse(body);
 		if (err) {
 			console.log(err);
 		} else {
+			//Parse JSON data to JS object
+			let result = JSON.parse(body);
 			//Check if any reports are returned and pass this to notification agent
 			if (result.data.totalReports !== 0) {
 				console.log("Found", result.data.totalReports, "reports!");

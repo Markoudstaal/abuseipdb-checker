@@ -17,5 +17,8 @@ var dailyCron = cron.schedule(cronTiming, () => {
 });
 
 console.log("Service will run", cronstrue.toString(cronTiming));
-console.log("Running checker once at start.");
-lib.checkAbuseForIp();
+
+if (config.runAtStartup) {
+	console.log("Running checker once at start.");
+	lib.checkAbuseForIp();
+}
