@@ -27,9 +27,10 @@ module.exports.checkAbuseForIp = function () {
 		if (err) {
 			console.log(err);
 		} else {
+			let result = {};
 			//Parse JSON data to JS object
 			try {
-				let result = JSON.parse(body);
+				result = JSON.parse(body);
 			} catch (e) {
 				console.log(e);
 				return false;
