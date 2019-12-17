@@ -28,7 +28,12 @@ module.exports.checkAbuseForIp = function () {
 			console.log(err);
 		} else {
 			//Parse JSON data to JS object
-			let result = JSON.parse(body);
+			try {
+				let result = JSON.parse(body);
+			} catch (e) {
+				console.log(e);
+				return false;
+			};
 			//Check if any reports are returned and pass this to notification agent
 			if (result.data.totalReports !== 0) {
 				console.log("Found", result.data.totalReports, "reports!");
